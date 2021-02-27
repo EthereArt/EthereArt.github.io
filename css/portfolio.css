@@ -1,0 +1,32 @@
+main {
+    padding-top: 50px;
+}
+
+.project-type {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.portfolio-grid {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.portfolio-grid img,
+.portfolio-grid video {
+  max-width: 100%;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .portfolio-grid img,
+  .portfolio-grid video {
+    max-width: 600px;
+    padding: 10px;
+  }
+}
