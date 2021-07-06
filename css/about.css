@@ -18,7 +18,13 @@ footer {
     align-items: center;
 }
 
-#facebook {
+.social-link {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+#facebook, #instagram, #behance {
     display: block;
     width: 58px;
     margin: 25px auto;
