@@ -1,0 +1,42 @@
+main {
+  display: grid;
+  grid-template-columns: 100%;
+  width: 95%;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 1440px) {
+  main {
+    width: 80%;
+  }
+}
+
+.project-type {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  text-align: left;
+  letter-spacing: 4px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  justify-self: center;
+  grid-row-gap: 10px;
+}
+
+.portfolio-grid img, .portfolio-grid video {
+  width: 99%;
+}
+
+@media only screen and (max-width: 800px) {
+  .project-type {
+    text-align: center;
+  }
+  .portfolio-grid {
+    grid-template-columns: 100%;
+  }
+}

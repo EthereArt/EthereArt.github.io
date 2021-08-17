@@ -1,0 +1,177 @@
+/* ! Custom Font ! */
+
+@font-face {
+  font-family: "Hey-October";
+  src: url("../fonts/HeyOctober-8M8oZ.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* ! Colors ! */
+
+/* ? hsl(242, 100%, 68%)
+
+/* ? hsl(138, 100%, 68%)
+
+/* ? hsl(262, 100%, 63%)
+
+/* ? hsl(222, 85%, 10%)
+
+/* ? #FFFFFF
+
+/* ? #000000
+
+/* ! Mobile Rules */
+
+body {
+  overflow-x: hidden;
+  background-color: #ffffff;
+  font-family: "Raleway", sans-serif;
+}
+
+main {
+  width: 100vw;
+}
+
+#navigation, .nav {
+  background-color: hsl(222, 85%, 10%);
+}
+
+#navigation a {
+  color: #f1f2eb;
+  font-size: 26px;
+}
+
+#navigation a:hover {
+  text-decoration: underline;
+}
+
+.nav-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-brand {
+  font-family: "Hey-October";
+  font-size: 26px;
+  padding-top: 10px;
+}
+
+body p {
+  color: #000000;
+}
+
+/* ! Header ! */
+
+.carousel {
+  padding: 25px;
+}
+
+.carousel-inner {
+  min-height: 400px;
+  display: flex;
+  background-color: black;
+  align-items: center;
+}
+
+.featured-works {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 33.33%);
+}
+
+.featured-project-link {
+  width: 100%;
+}
+
+.featured-project-link img {
+  width: 100%;
+}
+
+hr {
+  display: none;
+}
+
+/* ! Testimonials * ! */
+
+.testimonials-section {
+  margin-top: 50px;
+  width: 50%;
+  margin: 50px auto;
+}
+
+@media only screen and (max-width: 620px) {
+  hr {
+    display: unset;
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 1);
+  }
+}
+
+.testimonial__text {
+  width: 80%;
+  margin: 0 auto;
+  font-size: large;
+}
+
+.testimonial__source {
+  text-align: center;
+  margin-top: 20px;
+  font-size: large;
+}
+
+/* ! Footer */
+
+.footer-text {
+  margin-top: 100px;
+  font-size: x-small;
+  text-align: center;
+}
+
+@media only screen and (min-width: 450px) {
+  .featured-works {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media only screen and (min-width: 620px) {
+  .carousel-inner {
+    min-height: 700px;
+  }
+  .featured-works {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .featured-works {
+    display: grid;
+    grid-template-columns: repeat(3, [col] 1fr);
+    grid-column-gap: 20px;
+    width: 95%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  main {
+    margin: 0 auto;
+    width: 75%;
+  }
+  .carousel-inner {
+    min-height: 1000px;
+  }
+}
+
+@media only screen and (min-width: 1960px) {
+  main {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 2500px) {
+  main {
+    width: 50%;
+  }
+}
